@@ -1,0 +1,239 @@
+.page__actions {
+    padding-left: rem(20);
+    padding-top: rem(20);
+}
+.page__theme {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    position: relative;
+}
+
+html.dark {
+    body {
+        background-color: #263238;
+        color: #fff;
+    }
+    .header {
+        &._header-scroll {
+		    background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+    .header__logo_2 {
+        display: none;
+    }
+    .menu__link {
+        color: #fff;
+    }
+    .icons-main-block__circle {
+        &::before{
+            border: 1px solid rgba(255, 255, 255, 0.37);      
+        }
+    }
+    .button {
+	    background: #23B123;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #1b8b1b;
+            }
+        }
+        &_border {
+            background-color: transparent;
+		    border: 1px solid #fff;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: #1b2327;
+                }
+            }
+        }
+    }
+    .title {
+        color: #fff;
+        span {
+             color: #23B123;
+        }
+    }
+    .icons-main-block {
+        &_light {
+            display: none;
+        }
+    }
+    .partners {
+        &_light {
+            display: none;
+        }
+    }
+    .image-block {
+        background: rgba(255, 255, 255, 0.05);
+        &__circle {
+            &::before{
+                border: 1px solid rgba(255, 255, 255, 0.37);      
+            }
+        }
+    }
+    .spollers-pathway {
+        &__item {
+            background: rgba(255, 255, 255, 0.05);
+        }
+    }
+    .steps-why {
+        &__item {
+            color: #fff;
+            &::before{
+                background: rgba(255, 255, 255, 0.05);     
+            }
+        }
+    }
+    .item-review {
+        background: rgba(255, 255, 255, 0.05);           
+    }
+    .download {
+        &__body {
+            background: rgba(255, 255, 255, 0.05);           
+        }
+    }
+    .footer {
+        background: rgba(255, 255, 255, 0.05);   
+        &__main {
+            border-bottom: 1px solid #fff;
+        }   
+    }
+    .main-footer {      
+        &__logo {
+            &_light {
+                display: none;
+            }
+        }    
+        &__social {
+            &_light {
+                display: none;
+            }
+        }  
+    }
+    .social {
+        &__item {
+            background: #fff;
+        }
+    }
+}
+
+html.light {
+    body {
+        background-color: #e5e5e5bd;
+        color: #263238;
+    }
+    .header {
+        &._header-scroll {
+		    background-color: rgba(190, 190, 190, 0.517);
+        }
+    }
+    .header__logo_1 {
+        display: none;
+    }
+    .menu__link {
+        color: #263238;
+    }
+    .icons-main-block__circle {
+        &::before {
+            border: 1px solid #008000;
+        }
+    }
+    .button {
+        background: #008000;
+        color: #fff;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #1b8b1b;
+            }
+        }
+        &_border {
+            background-color: transparent;
+            color: #263238;
+            border: 1px solid #263238;
+            @media (any-hover: hover){
+                &:hover{
+                    color: #fff;
+                    background-color: #1b2327;
+                }
+            }
+        }
+    }
+    .title {
+        color: #263238;
+        span {
+            color: #008000;
+        }
+    }
+    .icons-main-block {
+        &_dark {
+            display: none;
+        }
+    }
+    .partners {
+        &_dark {
+            display: none;
+        }
+    }
+    .image-block {
+        background: rgba(0, 128, 0, 0.05);
+        &__circle {
+            &::before {
+                border: 1px solid #008000;
+            }
+        }
+    }
+    .spollers-pathway {
+        &__item {
+            background: rgba(0, 128, 0, 0.05);
+        }
+    }
+    .steps-why {
+        color: #008000;
+        &__item {
+            &::before{
+                background: rgba(0, 128, 0, 0.05);      
+            }
+        }
+    }
+    .item-review {
+        background: rgba(0, 128, 0, 0.05);      
+    }
+    .download {
+        &__body {
+            background: rgba(0, 128, 0, 0.05);              
+        }
+    }
+    .footer {
+        background: rgba(0, 128, 0, 0.05);      
+        &__main {
+            border-bottom: 1px solid rgba(38, 50, 56, 0.31);
+        }          
+    }
+    .main-footer {      
+        &__logo {
+            &_dark {
+                display: none;
+            }
+        }  
+        &__social {
+            &_dark {
+                display: none;
+            }
+        }    
+    }
+    .social {
+        &__item {
+            background: #008000;
+        }
+    }
+}
+
+html.dark .page__theme {
+    background: url('../img/icon/sun.svg') 0 0 / 100% no-repeat;
+}
+
+html.light .page__theme {
+    background: url('../img/icon/moon.svg') 0 0 / 100% no-repeat;
+}
+
